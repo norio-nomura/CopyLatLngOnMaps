@@ -23,6 +23,7 @@
     // See Apple URL Scheme Reference
     // https://developer.apple.com/library/mac/featuredarticles/iPhoneURLScheme_Reference/MapLinks/MapLinks.html
     NSString *query = [url query];
+    NSLog(@"#CopyLatLngOnMaps: %@", query);
     if ([[url host] isEqualToString:@"maps.apple.com"] && query) {
         
         // Prepare Regex
