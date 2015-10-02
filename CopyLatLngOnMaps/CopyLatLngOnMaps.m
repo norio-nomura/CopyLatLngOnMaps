@@ -23,13 +23,14 @@
     // See Apple URL Scheme Reference
     // https://developer.apple.com/library/mac/featuredarticles/iPhoneURLScheme_Reference/MapLinks/MapLinks.html
     NSString *query = [url query];
+    NSLog(@"#CopyLatLngOnMaps: %@", query);
     if ([[url host] isEqualToString:@"maps.apple.com"] && query) {
         
         // Prepare Regex
         static NSRegularExpression *regex = nil;
         if (!regex) {
             NSError *error = nil;
-            regex = [NSRegularExpression regularExpressionWithPattern:@"(q|h?near)=(-?\\d+\\.\\d+,-?\\d+\\.\\d+)" options:0 error:&error];
+            regex = [NSRegularExpression regularExpressionWithPattern:@"(q|sll|h?near)=(-?\\d+\\.\\d+,-?\\d+\\.\\d+)" options:0 error:&error];
             if (error) {
                 NSLog(@"NSRegularExpression regularExpressionWithPattern:options:error:%@", error);
             }
@@ -43,6 +44,10 @@
             if (matchRange.location != NSNotFound) {
                 NSString *paramName = [query substringWithRange:[result rangeAtIndex:1]];
                 if ([paramName isEqualToString:@"q"]) {
+                    // Use parameter "q" as latlng if it's formated in "lat,lng".
+                    latlng = [query substringWithRange:[result rangeAtIndex:2]];
+                    *stop = YES;
+                } else if ([paramName isEqualToString:@"sll"]) {
                     // Use parameter "q" as latlng if it's formated in "lat,lng".
                     latlng = [query substringWithRange:[result rangeAtIndex:2]];
                     *stop = YES;

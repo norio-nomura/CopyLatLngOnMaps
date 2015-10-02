@@ -272,7 +272,7 @@
 				INFOPLIST_FILE = "CopyLatLngOnMaps/CopyLatLngOnMaps-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 0.1;
+				VERSION = 0.2;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -286,7 +286,7 @@
 				INFOPLIST_FILE = "CopyLatLngOnMaps/CopyLatLngOnMaps-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 0.1;
+				VERSION = 0.2;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -310,6 +310,7 @@
 				6CF724A718D43EB3001CFE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
