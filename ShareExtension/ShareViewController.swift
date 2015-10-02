@@ -60,7 +60,7 @@ class ShareViewController: NSViewController {
     func getLatLngFromAppleMapsURL(url: NSURL) -> String? {
         guard url.host == "maps.apple.com" else { return nil }
         
-        let pattern = "(q|sll|h?near)=(-?\\d+\\.\\d+,-?\\d+\\.\\d+)"
+        let pattern = "(q|sll|ll|h?near)=(-?\\d+\\.\\d+,-?\\d+\\.\\d+)"
         guard let regex = try? NSRegularExpression(pattern: pattern, options: []) else { return nil }
         
         var latlng: String? = nil
@@ -77,7 +77,8 @@ class ShareViewController: NSViewController {
                 let query = query as NSString
                 switch query.substringWithRange(result.rangeAtIndex(1)) {
                 case "q": fallthrough
-                case "sll":
+                case "sll": fallthrough
+                case "ll":
                     latlng = query.substringWithRange(result.rangeAtIndex(2))
                     stop.memory = true
                 case hasPrefix("near"):
