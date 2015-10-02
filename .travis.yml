@@ -1,0 +1,34 @@
+language: objective-c
+osx_image: xcode7
+before_install:
+- sudo systemsetup -settimezone Asia/Tokyo
+install:
+- bundle install --path=vendor/bundle --binstubs=vendor/bin
+script:
+- xcodebuild -project CopyLatLngOnMaps.xcodeproj -scheme CopyLatLngOnMaps archive -archivePath CopyLatLngOnMaps.xcarchive|bundle exec xcpretty
+branches:
+  only:
+  - master
+  - "/^\\d+\\.\\d+(\\.\\d+)?$/"
+env:
+  global:
+  - LANG=en_US.UTF-8
+  - LC_ALL=en_US.UTF-8
+  - secure: DOU+oidisWozhIjMOZWLY1UXQxR7teIKcrRivXWhWRFiQn8Ormt3jEGA2Yx4E6BTmGqB3AEkwPyq+EUiSTywJcl9f2snsun0woWpzSnZm/S6A8wq/UJz/SsblB1YSlYMiPk3WT+NjhC/cSC5zam2Kog6snUt1UQylAYohRiL+sM=
+before_deploy:
+- export/add-keychain.sh
+- xcodebuild -exportArchive -archivePath CopyLatLngOnMaps.xcarchive -exportPath . -exportOptionsPlist export/options.plist|bundle exec xcpretty
+- zip -r --symlinks CopyLatLngOnMaps-$TRAVIS_TAG.zip CopyLatLngOnMaps.app
+deploy:
+  provider: releases
+  api_key:
+    secure: cH5gqomcK/OtSPVbmOuPwkoTAa4d6OV9UKvepIq6QvSIKKGpDrQtuoRAfAWX72M7h2ucmn0dITfbaLxJ1/u9MvPayEyr1BvU44wzAf8R8QzoPsVvqo1Zrl53L3buvRpyZCLhUS7zXOSnO0UhGmZEzBEKQTm9/HFaMrcXY1YRLjM=
+  file: CopyLatLngOnMaps-$TRAVIS_TAG.zip
+  on:
+    tags: true
+  skip_cleanup: true
+after_deploy:
+- export/remove-keychain.sh
+notifications:
+  webhooks:
+    secure: hN+5wrxLPdxfNZSAxU5AgRRQJkalpwTjpyqZiJ0I4N3iZ/evWEE+rufooNBAIbM4Qi/4jaq65Ln9ypEkLknE4Q9UTYfcuqBMNprI28C18ADA2U4VOwZAFBS56Bnxa9Rg+P4gogF0mi6Jo/K8iNl0qBjgrlOCTYbfYMuUtu8RaPo=
