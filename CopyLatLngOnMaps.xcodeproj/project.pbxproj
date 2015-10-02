@@ -6,43 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		6CF7249718D43EB3001CFE63 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF7249618D43EB3001CFE63 /* Cocoa.framework */; };
-		6CF724A118D43EB3001CFE63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CF7249F18D43EB3001CFE63 /* InfoPlist.strings */; };
-		6CF724AA18D43EDE001CFE63 /* CopyLatLngOnMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF724A918D43EDE001CFE63 /* CopyLatLngOnMaps.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		6CF7249318D43EB3001CFE63 /* CopyLatLngOnMaps.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyLatLngOnMaps.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF7249618D43EB3001CFE63 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CF7249918D43EB3001CFE63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CF7249A18D43EB3001CFE63 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6CF7249B18D43EB3001CFE63 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		6CF7249E18D43EB3001CFE63 /* CopyLatLngOnMaps-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CopyLatLngOnMaps-Info.plist"; sourceTree = "<group>"; };
-		6CF724A018D43EB3001CFE63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6CF724A218D43EB3001CFE63 /* CopyLatLngOnMaps-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CopyLatLngOnMaps-Prefix.pch"; sourceTree = "<group>"; };
-		6CF724A818D43EDE001CFE63 /* CopyLatLngOnMaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyLatLngOnMaps.h; sourceTree = "<group>"; };
-		6CF724A918D43EDE001CFE63 /* CopyLatLngOnMaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyLatLngOnMaps.m; sourceTree = "<group>"; };
 		6CF724AB18D43F8A001CFE63 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		6CF7249018D43EB3001CFE63 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CF7249718D43EB3001CFE63 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6CF7248A18D43EB3001CFE63 = {
 			isa = PBXGroup;
 			children = (
 				6CF724AB18D43F8A001CFE63 /* README.md */,
-				6CF7249C18D43EB3001CFE63 /* CopyLatLngOnMaps */,
 				6CF7249518D43EB3001CFE63 /* Frameworks */,
 				6CF7249418D43EB3001CFE63 /* Products */,
 			);
@@ -51,7 +27,6 @@
 		6CF7249418D43EB3001CFE63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CF7249318D43EB3001CFE63 /* CopyLatLngOnMaps.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,48 +50,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		6CF7249C18D43EB3001CFE63 /* CopyLatLngOnMaps */ = {
-			isa = PBXGroup;
-			children = (
-				6CF724A818D43EDE001CFE63 /* CopyLatLngOnMaps.h */,
-				6CF724A918D43EDE001CFE63 /* CopyLatLngOnMaps.m */,
-				6CF7249D18D43EB3001CFE63 /* Supporting Files */,
-			);
-			path = CopyLatLngOnMaps;
-			sourceTree = "<group>";
-		};
-		6CF7249D18D43EB3001CFE63 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6CF7249E18D43EB3001CFE63 /* CopyLatLngOnMaps-Info.plist */,
-				6CF7249F18D43EB3001CFE63 /* InfoPlist.strings */,
-				6CF724A218D43EB3001CFE63 /* CopyLatLngOnMaps-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		6CF7249218D43EB3001CFE63 /* CopyLatLngOnMaps */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CF724A518D43EB3001CFE63 /* Build configuration list for PBXNativeTarget "CopyLatLngOnMaps" */;
-			buildPhases = (
-				6CF7248F18D43EB3001CFE63 /* Sources */,
-				6CF7249018D43EB3001CFE63 /* Frameworks */,
-				6CF7249118D43EB3001CFE63 /* Resources */,
-				6CF724AC18D44BAC001CFE63 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CopyLatLngOnMaps;
-			productName = CopyLatLngOnMaps;
-			productReference = 6CF7249318D43EB3001CFE63 /* CopyLatLngOnMaps.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6CF7248B18D43EB3001CFE63 /* Project object */ = {
@@ -137,59 +71,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6CF7249218D43EB3001CFE63 /* CopyLatLngOnMaps */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		6CF7249118D43EB3001CFE63 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CF724A118D43EB3001CFE63 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6CF724AC18D44BAC001CFE63 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\ncd ${TARGET_BUILD_DIR}\nzip -r ${SRCROOT}/downloads/${PRODUCT_NAME}-${VERSION}.zip *.bundle\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		6CF7248F18D43EB3001CFE63 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CF724AA18D43EDE001CFE63 /* CopyLatLngOnMaps.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6CF7249F18D43EB3001CFE63 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6CF724A018D43EB3001CFE63 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6CF724A318D43EB3001CFE63 /* Debug */ = {
@@ -263,34 +147,6 @@
 			};
 			name = Release;
 		};
-		6CF724A618D43EB3001CFE63 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CopyLatLngOnMaps/CopyLatLngOnMaps-Prefix.pch";
-				INFOPLIST_FILE = "CopyLatLngOnMaps/CopyLatLngOnMaps-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 0.2;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		6CF724A718D43EB3001CFE63 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CopyLatLngOnMaps/CopyLatLngOnMaps-Prefix.pch";
-				INFOPLIST_FILE = "CopyLatLngOnMaps/CopyLatLngOnMaps-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 0.2;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -299,15 +155,6 @@
 			buildConfigurations = (
 				6CF724A318D43EB3001CFE63 /* Debug */,
 				6CF724A418D43EB3001CFE63 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6CF724A518D43EB3001CFE63 /* Build configuration list for PBXNativeTarget "CopyLatLngOnMaps" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6CF724A618D43EB3001CFE63 /* Debug */,
-				6CF724A718D43EB3001CFE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
