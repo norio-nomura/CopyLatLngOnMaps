@@ -62,6 +62,10 @@
 		6C7835DC1BBE253400E10E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C7835DE1BBE253900E10E60 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6C7835E01BBE27CD00E10E60 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ShareViewController.strings; sourceTree = "<group>"; };
+		6C7835E21BBE93E700E10E60 /* add-keychain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "add-keychain.sh"; sourceTree = "<group>"; };
+		6C7835E31BBE93E700E10E60 /* DeveloperID.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DeveloperID.p12; sourceTree = "<group>"; };
+		6C7835E41BBE93E700E10E60 /* options.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = options.plist; sourceTree = "<group>"; };
+		6C7835E51BBE93E700E10E60 /* remove-keychain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "remove-keychain.sh"; sourceTree = "<group>"; };
 		6CF7249618D43EB3001CFE63 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CF7249918D43EB3001CFE63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CF7249A18D43EB3001CFE63 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -121,10 +125,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6C7835E11BBE93E700E10E60 /* export */ = {
+			isa = PBXGroup;
+			children = (
+				6C7835E21BBE93E700E10E60 /* add-keychain.sh */,
+				6C7835E31BBE93E700E10E60 /* DeveloperID.p12 */,
+				6C7835E41BBE93E700E10E60 /* options.plist */,
+				6C7835E51BBE93E700E10E60 /* remove-keychain.sh */,
+			);
+			path = export;
+			sourceTree = "<group>";
+		};
 		6CF7248A18D43EB3001CFE63 = {
 			isa = PBXGroup;
 			children = (
 				6CF724AB18D43F8A001CFE63 /* README.md */,
+				6C7835E11BBE93E700E10E60 /* export */,
 				6C7835AD1BBE232800E10E60 /* CopyLatLngOnMaps */,
 				6C7835C71BBE24F800E10E60 /* ShareExtension */,
 				6CF7249518D43EB3001CFE63 /* Frameworks */,

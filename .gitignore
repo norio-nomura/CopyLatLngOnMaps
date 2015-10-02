@@ -19,3 +19,7 @@ profile
 
 #
 downloads
+
+# Bundler
+.bundle
+vendor/
