@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "Copy LatLng to Clipboard"; ObjectID = "0xp-rC-2gr"; */
+"0xp-rC-2gr.title" = "URLから緯度経度をクリップボードへコピーする";
+
+/* Class = "NSButtonCell"; title = "Copy"; ObjectID = "2l4-PO-we5"; */
+"2l4-PO-we5.title" = "コピー";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "6Up-t3-mwm"; */
+"6Up-t3-mwm.title" = "キャンセル";
+
+/* Class = "NSTextFieldCell"; title = "Can't detect LatLng from URL"; ObjectID = "ai6-ek-I0c"; */
+"ai6-ek-I0c.title" = "緯度経度をURLから検出できませんでした";

@@ -6,7 +6,62 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6C7835AF1BBE232800E10E60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7835AE1BBE232800E10E60 /* AppDelegate.swift */; };
+		6C7835B11BBE232800E10E60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7835B01BBE232800E10E60 /* ViewController.swift */; };
+		6C7835B31BBE232800E10E60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7835B21BBE232800E10E60 /* Assets.xcassets */; };
+		6C7835B61BBE232800E10E60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7835B41BBE232800E10E60 /* Main.storyboard */; };
+		6C7835BD1BBE234500E10E60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C7835BF1BBE234500E10E60 /* InfoPlist.strings */; };
+		6C7835CA1BBE24F800E10E60 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6C7835C91BBE24F800E10E60 /* icon.icns */; };
+		6C7835CD1BBE24F800E10E60 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7835CC1BBE24F800E10E60 /* ShareViewController.swift */; };
+		6C7835D01BBE24F800E10E60 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C7835CE1BBE24F800E10E60 /* ShareViewController.xib */; };
+		6C7835D41BBE24F800E10E60 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C7835C61BBE24F800E10E60 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C7835DB1BBE253400E10E60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C7835DD1BBE253400E10E60 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C7835D21BBE24F800E10E60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF7248B18D43EB3001CFE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C7835C51BBE24F800E10E60;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C7835D81BBE24F800E10E60 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C7835D41BBE24F800E10E60 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6C7835AC1BBE232800E10E60 /* CopyLatLngOnMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyLatLngOnMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7835AE1BBE232800E10E60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C7835B01BBE232800E10E60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C7835B21BBE232800E10E60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C7835B51BBE232800E10E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C7835B71BBE232800E10E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7835BE1BBE234500E10E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C7835C01BBE242400E10E60 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		6C7835C11BBE242400E10E60 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C7835C61BBE24F800E10E60 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C7835C91BBE24F800E10E60 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		6C7835CB1BBE24F800E10E60 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		6C7835CC1BBE24F800E10E60 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		6C7835CF1BBE24F800E10E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		6C7835D11BBE24F800E10E60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7835DC1BBE253400E10E60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C7835DE1BBE253900E10E60 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6C7835E01BBE27CD00E10E60 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ShareViewController.strings; sourceTree = "<group>"; };
 		6CF7249618D43EB3001CFE63 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CF7249918D43EB3001CFE63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CF7249A18D43EB3001CFE63 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -14,11 +69,64 @@
 		6CF724AB18D43F8A001CFE63 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		6C7835A91BBE232800E10E60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7835C31BBE24F800E10E60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		6C7835AD1BBE232800E10E60 /* CopyLatLngOnMaps */ = {
+			isa = PBXGroup;
+			children = (
+				6C7835AE1BBE232800E10E60 /* AppDelegate.swift */,
+				6C7835B01BBE232800E10E60 /* ViewController.swift */,
+				6C7835B21BBE232800E10E60 /* Assets.xcassets */,
+				6C7835B41BBE232800E10E60 /* Main.storyboard */,
+				6C7835B71BBE232800E10E60 /* Info.plist */,
+				6C7835BF1BBE234500E10E60 /* InfoPlist.strings */,
+			);
+			path = CopyLatLngOnMaps;
+			sourceTree = "<group>";
+		};
+		6C7835C71BBE24F800E10E60 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6C7835CC1BBE24F800E10E60 /* ShareViewController.swift */,
+				6C7835CE1BBE24F800E10E60 /* ShareViewController.xib */,
+				6C7835D11BBE24F800E10E60 /* Info.plist */,
+				6C7835DD1BBE253400E10E60 /* InfoPlist.strings */,
+				6C7835C81BBE24F800E10E60 /* Supporting Files */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		6C7835C81BBE24F800E10E60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C7835C91BBE24F800E10E60 /* icon.icns */,
+				6C7835CB1BBE24F800E10E60 /* ShareExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6CF7248A18D43EB3001CFE63 = {
 			isa = PBXGroup;
 			children = (
 				6CF724AB18D43F8A001CFE63 /* README.md */,
+				6C7835AD1BBE232800E10E60 /* CopyLatLngOnMaps */,
+				6C7835C71BBE24F800E10E60 /* ShareExtension */,
 				6CF7249518D43EB3001CFE63 /* Frameworks */,
 				6CF7249418D43EB3001CFE63 /* Products */,
 			);
@@ -27,6 +135,8 @@
 		6CF7249418D43EB3001CFE63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				6C7835AC1BBE232800E10E60 /* CopyLatLngOnMaps.app */,
+				6C7835C61BBE24F800E10E60 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,12 +162,59 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		6C7835AB1BBE232800E10E60 /* CopyLatLngOnMaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7835B81BBE232800E10E60 /* Build configuration list for PBXNativeTarget "CopyLatLngOnMaps" */;
+			buildPhases = (
+				6C7835A81BBE232800E10E60 /* Sources */,
+				6C7835A91BBE232800E10E60 /* Frameworks */,
+				6C7835AA1BBE232800E10E60 /* Resources */,
+				6C7835D81BBE24F800E10E60 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C7835D31BBE24F800E10E60 /* PBXTargetDependency */,
+			);
+			name = CopyLatLngOnMaps;
+			productName = CopyLatLngOnMaps;
+			productReference = 6C7835AC1BBE232800E10E60 /* CopyLatLngOnMaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C7835C51BBE24F800E10E60 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C7835D51BBE24F800E10E60 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				6C7835C21BBE24F800E10E60 /* Sources */,
+				6C7835C31BBE24F800E10E60 /* Frameworks */,
+				6C7835C41BBE24F800E10E60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 6C7835C61BBE24F800E10E60 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		6CF7248B18D43EB3001CFE63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Norio Nomura";
+				TargetAttributes = {
+					6C7835AB1BBE232800E10E60 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					6C7835C51BBE24F800E10E60 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
 			};
 			buildConfigurationList = 6CF7248E18D43EB3001CFE63 /* Build configuration list for PBXProject "CopyLatLngOnMaps" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -65,17 +222,195 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
+				ja,
 			);
 			mainGroup = 6CF7248A18D43EB3001CFE63;
 			productRefGroup = 6CF7249418D43EB3001CFE63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				6C7835AB1BBE232800E10E60 /* CopyLatLngOnMaps */,
+				6C7835C51BBE24F800E10E60 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		6C7835AA1BBE232800E10E60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7835B31BBE232800E10E60 /* Assets.xcassets in Resources */,
+				6C7835BD1BBE234500E10E60 /* InfoPlist.strings in Resources */,
+				6C7835B61BBE232800E10E60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7835C41BBE24F800E10E60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7835D01BBE24F800E10E60 /* ShareViewController.xib in Resources */,
+				6C7835DB1BBE253400E10E60 /* InfoPlist.strings in Resources */,
+				6C7835CA1BBE24F800E10E60 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C7835A81BBE232800E10E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7835B11BBE232800E10E60 /* ViewController.swift in Sources */,
+				6C7835AF1BBE232800E10E60 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7835C21BBE24F800E10E60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7835CD1BBE24F800E10E60 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C7835D31BBE24F800E10E60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C7835C51BBE24F800E10E60 /* ShareExtension */;
+			targetProxy = 6C7835D21BBE24F800E10E60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C7835B41BBE232800E10E60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7835B51BBE232800E10E60 /* Base */,
+				6C7835C01BBE242400E10E60 /* ja */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C7835BF1BBE234500E10E60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7835BE1BBE234500E10E60 /* Base */,
+				6C7835C11BBE242400E10E60 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6C7835CE1BBE24F800E10E60 /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7835CF1BBE24F800E10E60 /* Base */,
+				6C7835E01BBE27CD00E10E60 /* ja */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+		6C7835DD1BBE253400E10E60 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C7835DC1BBE253400E10E60 /* Base */,
+				6C7835DE1BBE253900E10E60 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		6C7835B91BBE232800E10E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = CopyLatLngOnMaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.CopyLatLngOnMaps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C7835BA1BBE232800E10E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = CopyLatLngOnMaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.CopyLatLngOnMaps";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C7835D61BBE24F800E10E60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.CopyLatLngOnMaps.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C7835D71BBE24F800E10E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.CopyLatLngOnMaps.ShareExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		6CF724A318D43EB3001CFE63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -93,6 +428,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -111,6 +447,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VERSION = 0.2;
 			};
 			name = Debug;
 		};
@@ -144,12 +481,31 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
+				VERSION = 0.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C7835B81BBE232800E10E60 /* Build configuration list for PBXNativeTarget "CopyLatLngOnMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7835B91BBE232800E10E60 /* Debug */,
+				6C7835BA1BBE232800E10E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C7835D51BBE24F800E10E60 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C7835D61BBE24F800E10E60 /* Debug */,
+				6C7835D71BBE24F800E10E60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6CF7248E18D43EB3001CFE63 /* Build configuration list for PBXProject "CopyLatLngOnMaps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
